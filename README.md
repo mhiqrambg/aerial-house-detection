@@ -133,7 +133,7 @@ aerial-house-detection/
 ├── configs/          dataset and training YAML
 ├── datasets/         downloaded data and YOLO conversion (gitignored)
 ├── docs/             dataset card, experiment log
-├── notebooks/        thin entry points; logic lives in src/
+├── notebooks/        Colab notebook exported verbatim (36 cells)
 ├── src/
 │   ├── data/         mask to bbox conversion
 │   ├── evaluation/   IoU, matching, counting errors, count analysis
@@ -157,6 +157,10 @@ aerial-house-detection/
 
 Both the report and the slides are generated from run artifacts by
 `scripts/build_report.py` and `scripts/build_slides.py`.
+
+`notebooks/aerial_house_detection_colab.ipynb` is a verbatim export of the 36 cells that ran in
+Colab. Its paths point to `/content/...`, so it is a record of the training run, not a local
+runner. Local inference uses `scripts/infer.py` instead.
 
 ## Results
 
