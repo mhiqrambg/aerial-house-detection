@@ -1,0 +1,19 @@
+# data & run artifacts (never commit)
+datasets/
+outputs/
+experiments/
+*.mp4
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.venv-infer/
+.pytest_cache/
+
+# os
+.DS_Store
+
+# local downloads
+*.zip

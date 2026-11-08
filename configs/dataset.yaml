@@ -1,0 +1,7 @@
+# Ultralytics dataset descriptor. `path` is rewritten by scripts/convert_to_yolo.py.
+path: ../datasets/whu_yolo
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: building

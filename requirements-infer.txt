@@ -1,0 +1,5 @@
+# Inference only. Training needs the full requirements.txt.
+ultralytics==8.4.208
+sahi==0.14.0
+opencv-python>=4.9
+numpy>=1.26

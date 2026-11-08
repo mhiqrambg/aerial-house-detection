@@ -1,0 +1,14 @@
+# Baseline training config (exp01), values used in Colab.
+model: yolo11s.pt
+data: configs/dataset.yaml
+imgsz: 640
+batch: 16
+epochs: 30
+patience: 10
+seed: 42
+deterministic: true
+workers: 2
+project: experiments
+name: exp01_yolo11s_baseline
+plots: true
+val: true
