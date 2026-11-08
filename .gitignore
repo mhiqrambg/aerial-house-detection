@@ -17,3 +17,11 @@ __pycache__/
 
 # local downloads
 *.zip
+
+# secrets (never commit)
+.env
+.env.*
+*.pem
+*.key
+kaggle.json
+.netrc
