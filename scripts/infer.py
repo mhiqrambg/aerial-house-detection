@@ -26,7 +26,12 @@ def collect(source: Path) -> list[Path]:
         return sorted(p for p in source.rglob("*") if p.suffix.lower() in IMAGE_SUFFIXES)
     if source.is_file():
         return [source]
-    raise FileNotFoundError(f"source not found: {source}")
+    supported = ", ".join(sorted(IMAGE_SUFFIXES))
+    raise FileNotFoundError(
+        f"source not found: {source}\n"
+        f"Pass an existing image ({supported}) or a folder containing images.\n"
+        f"Example: python scripts/infer.py outputs/foto_aerial.png"
+    )
 
 
 def main() -> None:

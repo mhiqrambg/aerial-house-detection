@@ -75,6 +75,9 @@ python3 -m venv .venv-infer          # Python 3.10 to 3.13
 source .venv-infer/bin/activate
 pip install -r requirements-infer.txt
 
+# quick check with the bundled sample (76 houses)
+python scripts/infer.py samples/demo_tile.png --no-sahi
+
 # one image, SAHI slicing by default (recommended for large images)
 python scripts/infer.py photo.png
 
